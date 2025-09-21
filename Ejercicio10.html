@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 10 - Limpiar HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">🏡 Menú Principal</a>
+    </div>
+    <div class="container">
+        <h1>Eliminar Etiquetas Peligrosas</h1>
+        <p>Escribe un código HTML con etiquetas `script` y el validador las eliminará.</p>
+        <div class="input-group">
+            <label for="htmlInput">Introduce HTML:</label>
+            <textarea id="htmlInput" rows="10" placeholder="Ej. <h1>Hola</h1><script>alert('peliro')</script>"></textarea>
+        </div>
+        <button id="limpiarBtn">Limpiar HTML</button>
+        <div id="resultado" class="message-box"></div>
+    </div>
+    
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            ejercicio10();
+        });
+    </script>
+</body>
+</html>

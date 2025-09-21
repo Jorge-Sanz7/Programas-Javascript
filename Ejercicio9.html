@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 9 - Validador de Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">🏡 Menú Principal</a>
+    </div>
+    <div class="container">
+        <h1>Formulario de Registro</h1>
+        <form id="registro-form">
+            <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+                <span id="error-nombre" class="error"></span>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <span id="error-email" class="error"></span>
+            </div>
+            <div class="input-group">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" rows="3" maxlength="50"></textarea>
+                <span id="error-comentarios" class="error"></span>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password">
+                <span id="error-password" class="error"></span>
+            </div>
+            <div class="input-group" style="text-align: left;">
+                <input type="checkbox" id="acepto" required>
+                <label for="acepto" style="display: inline;">Acepto las condiciones del servicio</label>
+                <span id="error-acepto" class="error"></span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
